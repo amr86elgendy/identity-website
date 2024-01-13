@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* body {
+  @apply bg-red-500
+} */
+
+:root {
+  --background-color: rgb(12, 12, 13);
+  --primary-gradient-color: #c485ff;
+  --secondary-gradient-color: #7700ff;
+  --tertiary-gradient-color: #535BD8;
+}
+
+h1 {
+  @apply text-7xl md:text-8xl font-extrabold tracking-tight;
+}
+
+h2 {
+  @apply text-6xl md:text-7xl font-extrabold tracking-tight;
+}
+
+h3 {
+  @apply text-5xl md:text-6xl font-extrabold;
+}
+
+h4 {
+  @apply text-4xl md:text-5xl font-extrabold;
+}
+
+h5 {
+  @apply text-3xl md:text-4xl font-extrabold;
+}
+
+p {
+  @apply text-base  md:text-xl leading-6  md:leading-7 text-white/50
+}
+
+.btn {
+  @apply py-3 px-8 rounded-full capitalize text-sm md:text-base;
+}
+
+.btn-primary {
+  @apply gradient-primary;
+}
+
+.btn-secondary {
+  @apply  text-white/50 hover:text-white transition-all duration-300 ;
+}
+
+.btn-tertiary {
+  @apply border relative border-white/20 before:inset-x-0 before:-top-0 before:bg-[radial-gradient(closest-side,rgba(255,255,255,0.5),transparent)] before:absolute before:h-[1px];
+}
+
+
+.gradient-primary {
+  @apply bg-[radial-gradient(100%_150%_at_7.3%_-29.1%,var(--primary-gradient-color)_0%,var(--secondary-gradient-color)_100%)]
+}
+
+.gradient-gray {
+  @apply bg-[radial-gradient(circle_at_center,#ffffff,rgba(150,150,150))]
+}
